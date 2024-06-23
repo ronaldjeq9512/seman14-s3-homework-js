@@ -1,0 +1,157 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.articleItems {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px red solid;
+    padding: 10px;
+}
+
+.asideItems {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px red solid;
+    padding: 10px;
+    min-width: 350px;
+}
+
+.inputSubmit {
+    width: 120px;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.inputContainer {
+    justify-content: space-between;
+    display: flex;
+    width: 320px;
+}
+
+.title {
+    margin-top: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    background-color: white;
+    color: black;
+}
+
+.listItem {
+    padding: 10px;
+    min-width: 200px;
+}
+
+.itemContent {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+.deleteButton {
+    width: 120px;
+    background-color: red;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th, table td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 8px;
+}
+
+.tableItem {
+  text-align: center;
+}
+
+#containerList {
+  max-height: 300px;
+  overflow: auto;
+}
+
+#containerList table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+#containerList thead, #containerList tbody {
+  display: block;
+}
+
+#containerList thead {
+  width: 100%;
+}
+
+#containerList tbody {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+#containerList tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#containerList thead tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+#containerList {
+  position: relative;
+}
+
+#containerList thead, #containerList tbody {
+  width: calc(100% - 1em);
+}
+
+#containerList thead {
+  position: sticky;
+  top: 0;
+  background-color: black;
+  z-index: 1;
+}
